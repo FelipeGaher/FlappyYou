@@ -52,7 +52,8 @@ function draw() {
 }
 
 function mousePressed(){
-
+    
+    //TODO: Working fine on PC by clicking but not on phone/tablet by tapping.
 	//if(key == ' '){
 		//console.log("SPACE");
 		bird.up();
