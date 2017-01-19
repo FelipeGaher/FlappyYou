@@ -5,12 +5,20 @@ function Score() {
 
     //Show the score
     this.show = function () {
-        text(this.score, 20, 30);
+        fill("green");
+        rect(10, 10, 40, 40);
+        fill("black");
+        textAlign(CENTER)
+        textSize(25);
+        text(this.score, 30, 40);
+
     }
-    
+
     //Update de score
     this.update = function (i) {
+
         this.score++;
-        text(this.score + i, 20, 30);
+        //Not needed to add more text in the update
+        // text(this.score + i, 20, 30);
     }
 }
