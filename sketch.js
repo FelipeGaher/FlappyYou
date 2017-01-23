@@ -1,6 +1,7 @@
 var bird;
 var pipes = [];
 var score;
+var menu;
 
 function preload()
 {
@@ -15,12 +16,14 @@ function setup() {
 	bird = new Bird();
 	pipes.push(new Pipe());
     score = new Score();
-    
+    menu = new Menu();
 }
 
 function draw() {
 	background(255);
     image(imgBackground, 0, 0);
+    
+    
     
 	for (var i = pipes.length-1; i >= 0; i--){
 		pipes[i].show();
@@ -48,7 +51,7 @@ function draw() {
 		pipes.push(new Pipe());
 	}
 
-	
+	menu.show();
 }
 
 function mousePressed(){
