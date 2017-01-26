@@ -50,16 +50,15 @@ function draw() {
 	if(frameCount % 80 == 0){
 		pipes.push(new Pipe());
 	}
-
+    menu.update();
 	menu.show();
 }
 
 function mousePressed(){
     
     //TODO: Working fine on PC by clicking but not on phone/tablet by tapping.
-	//if(key == ' '){
-		//console.log("SPACE");
-		bird.up();
-	//}
-
+	bird.up();
+    if(menu.actiated = true){
+        menu.click();
+    }
 }
