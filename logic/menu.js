@@ -50,18 +50,49 @@ function Menu() {
 
 
     this.update = function () {
-        if(mouseX > 100 & mouseX < 300 && mouseY > 100 && mouseY < 140 ){
+        //START
+        if(mouseX > 100 && mouseX < 300 && mouseY > 100 && mouseY < 140 ){
             
             this.startClick = true;
+
         }else{
             this.startClick = false;
+        }
+        
+         //CREDITS
+        if(mouseX > 100 && mouseX < 300 && mouseY > 300 && mouseY < 340 ){
+            
+            this.creditClick = true;
+                    stroke(100);
+
+        }else{
+            this.creditClick = false;
+        }
+        
+         //EXIT
+        if(mouseX > 100 && mouseX < 300 && mouseY > 500 && mouseY < 540 ){
+            
+            this.exitClick = true;
+                    stroke(100);
+
+        }else{
+            this.exitClick = false;
         }
 
     }
     
     this.click = function() {
-        if (this.startClick = true) {
+        // Start is clicked
+        if (this.startClick == true) {
             console.log("onStartButton");
+        }
+        // Credits is clicked
+        if (this.creditClick == true) {
+            console.log("onCreditsButton");
+        }
+        //Exit is clicked
+        if (this.exitClick == true) {
+            console.log("onExitButton");
         }
     }
     
