@@ -2,6 +2,7 @@ var bird;
 var pipes = [];
 var score;
 var menu;
+var buttons;
 
 function preload()
 {
@@ -17,6 +18,7 @@ function setup() {
 	pipes.push(new Pipe());
     score = new Score();
     menu = new Menu();
+    buttons = new ExtraButtons();
 }
 
 function draw() {
@@ -43,9 +45,10 @@ function draw() {
 		}
 	}
     score.show();
+    buttons.show();
 	bird.update();
 	bird.show();
-
+    
 	if(frameCount % 80 == 0){
 		pipes.push(new Pipe());
 	}
