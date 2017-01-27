@@ -2,7 +2,7 @@ var bird;
 var pipes = [];
 var score;
 var menu;
-var buttons;
+var extraButtons;
 
 function preload()
 {
@@ -18,7 +18,7 @@ function setup() {
 	pipes.push(new Pipe());
     score = new Score();
     menu = new Menu();
-    buttons = new ExtraButtons();
+    extraButtons = new ExtraButtons();
 }
 
 function draw() {
@@ -45,7 +45,8 @@ function draw() {
 		}
 	}
     score.show();
-    buttons.show();
+    extraButtons.show();
+    extraButtons.update();
 	bird.update();
 	bird.show();
     

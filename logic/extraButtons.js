@@ -18,8 +18,8 @@ function ExtraButtons() {
     //Update
     this.update = function () {
         //START
-        if(mouseX > 100 && mouseX < 300 && mouseY > 100 && mouseY < 140 ){
-            
+        if(mouseX > this.x-50 && mouseX < this.x-10 && mouseY > 50 && mouseY < 140 ){
+            console.log("BUTTON!!!!")
             this.menuClicked = true;
 
         }else{
@@ -33,6 +33,6 @@ function ExtraButtons() {
             console.log("onStartButton");
         }
         
-        }
     }
+    
 }
