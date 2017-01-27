@@ -20,11 +20,10 @@ function setup() {
 }
 
 function draw() {
+    push();
 	background(255);
     image(imgBackground, 0, 0);
-    
-    
-    
+        
 	for (var i = pipes.length-1; i >= 0; i--){
 		pipes[i].show();
 		pipes[i].update();
@@ -50,15 +49,21 @@ function draw() {
 	if(frameCount % 80 == 0){
 		pipes.push(new Pipe());
 	}
+    
     menu.update();
-	menu.show();
+	
+    if(menu.activated == true){
+        menu.show();
+    }else{
+        menu.close();
+    }
 }
 
 function mousePressed(){
     
     //TODO: Working fine on PC by clicking but not on phone/tablet by tapping.
 	bird.up();
-    if(menu.actiated = true){
+    if(menu.activated == true){
         menu.click();
     }
 }

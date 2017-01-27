@@ -1,7 +1,7 @@
 function Menu() {
     this.y = height - 20;
     this.x = width - 20;
-    this.actiated = false;
+    this.activated = true;
     this.startButton;
     this.creditButton;
     this.exitButton;
@@ -20,7 +20,7 @@ function Menu() {
         noStroke();
         fill(menuColor);
         rect(10, 10, this.x, this.y);
-        this.actiated = true;
+        this.activated = true;
 
         stroke(255);
         fill(botons);
@@ -93,7 +93,14 @@ function Menu() {
         //Exit is clicked
         if (this.exitClick == true) {
             console.log("onExitButton");
+            return this.activated = false;
+
         }
     }
+    
+    this.close = function() {
+        pop();
+    }
+
     
 }
