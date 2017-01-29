@@ -27,6 +27,7 @@ function ExtraButtons() {
         }
     }
     
+    //Click functionality
     this.click = function() {
         // Start is clicked
         if (this.menuClicked == true) {
