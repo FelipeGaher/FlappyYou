@@ -15,7 +15,7 @@ function ExtraButtons() {
 
     }
 
-    //Update
+    //Update - Manage when the button is clicked or tapped
     this.update = function () {
         //START
         if(mouseX > this.x-50 && mouseX < this.x-10 && mouseY > 50 && mouseY < 140 ){
