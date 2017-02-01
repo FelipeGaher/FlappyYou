@@ -12,6 +12,7 @@ function preload()
 
 }
 
+//Set up and instance all the objects
 function setup() {
 	createCanvas(400, 600);
 	bird = new Bird();
@@ -21,6 +22,7 @@ function setup() {
     extraButtons = new ExtraButtons();
 }
 
+//Main draw function
 function draw() {
     push();
 	background(255);
@@ -63,6 +65,7 @@ function draw() {
     }
 }
 
+//When mouse or screen is pressed
 function mousePressed(){
     
     //TODO: Working fine on PC by clicking but not on phone/tablet by tapping.
