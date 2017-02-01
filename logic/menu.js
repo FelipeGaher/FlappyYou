@@ -10,7 +10,7 @@ function Menu() {
     this.creditClick =false;
     this.exitClick =false;
 
-    
+    //it draws every button of the menu.
     this.show = function () {
 
         var menuColor = color('rgba(180, 50, 50, 0.8)')
@@ -48,7 +48,7 @@ function Menu() {
 
     }
 
-
+    //Manage when a button is clicked or tapped
     this.update = function () {
         //START
         if(mouseX > 100 && mouseX < 300 && mouseY > 100 && mouseY < 140 ){
