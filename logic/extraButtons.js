@@ -27,6 +27,7 @@ function ExtraButtons() {
         }
     }
     
+    //TODO: Should display the Menu
     //Click functionality
     this.click = function() {
         // Start is clicked
