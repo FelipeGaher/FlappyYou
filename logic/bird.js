@@ -6,10 +6,15 @@ function Bird() {
     this.lift = -15
     this.velocity = 0;
 
-    
+    //TODO: Change the image to a functionality where
     this.preload = function(){
-        img = loadImage("img/yo.png");
+        img = loadImage(preLoadImg("yo"));
     }
+    
+    this.preLoadImg =function(name){
+        return "img/"+name+".png"
+    }
+    
     
     this.show = function () {
         //fill(255);
