@@ -17,6 +17,8 @@ function Bird() {
     
     
     this.show = function () {
+    
+        //IF there is no pic, show a elipse functionality needed
         //fill(255);
        // ellipse(this.x, this.y, 32, 32);
         image(img, this.x, this.y, 50, 50);
