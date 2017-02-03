@@ -6,11 +6,11 @@ function Bird() {
     this.lift = -15
     this.velocity = 0;
 
-    //TODO: Change the image to a functionality where
     this.preload = function(){
         img = loadImage(preLoadImg("yo"));
     }
     
+    //TODO: This method should bring the name from an INPUT field, in order to change the picture.
     this.preLoadImg =function(name){
         return "img/"+name+".png"
     }
