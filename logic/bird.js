@@ -6,21 +6,21 @@ function Bird() {
     this.lift = -15
     this.velocity = 0;
 
-    this.preload = function(){
+    this.preload = function () {
         img = loadImage(preLoadImg("yo"));
     }
-    
+
     //TODO: This method should bring the name from an INPUT field, in order to change the picture.
-    this.preLoadImg =function(name){
-        return "img/"+name+".png"
+    this.preLoadImg = function (name) {
+        return "img/" + name + ".png"
     }
-    
-    
+
+
     this.show = function () {
-    
+
         //IF there is no pic, show a elipse functionality needed
         //fill(255);
-       // ellipse(this.x, this.y, 32, 32);
+        // ellipse(this.x, this.y, 32, 32);
         image(img, this.x, this.y, 50, 50);
     }
 
