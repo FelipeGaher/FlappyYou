@@ -16,9 +16,6 @@ function Score() {
 
     //Update de score
     this.update = function (i) {
-
         this.score++;
-        //Not needed to add more text in the update
-        // text(this.score + i, 20, 30);
     }
 }
