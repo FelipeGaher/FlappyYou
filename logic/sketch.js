@@ -4,6 +4,7 @@ var score;
 var menu;
 var extraButtons;
 
+//Prepare everything before using it
 function preload() {
 	// load image
 	img = loadImage("img/yo2.png");
