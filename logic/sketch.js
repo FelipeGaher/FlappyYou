@@ -36,7 +36,8 @@ function draw() {
 			console.log("HIT");
 		}
 		if (pipes[i].score(bird)) {
-
+            
+            //TODO: Fix score to only add 1 point per pipe passed
 			score.update(score.score++);
 		}
 
